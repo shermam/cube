@@ -3,11 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cube Trainer</title>
   </head>
 
   <body>
-    <h1>Cube Trainer</h1>
+    <div id="cube-render"></div>
+
+    <!-- CUBE RENDER -->
+    <div id="cube">
+      <div class="face" style="grid-area: up">
+        <div id="spot-0" class="square" style="background-color: #fff"></div>
+        <div id="spot-1" class="square" style="background-color: #fff"></div>
+        <div id="spot-2" class="square" style="background-color: #fff"></div>
+        <div id="spot-3" class="square" style="background-color: #fff"></div>
+        <div id="spot-null" class="square" style="background-color: #fff"></div>
+        <div id="spot-4" class="square" style="background-color: #fff"></div>
+        <div id="spot-5" class="square" style="background-color: #fff"></div>
+        <div id="spot-6" class="square" style="background-color: #fff"></div>
+        <div id="spot-7" class="square" style="background-color: #fff"></div>
+      </div>
+      <div class="face" style="grid-area: left">
+        <div id="spot-8" class="square" style="background-color: #f80"></div>
+        <div id="spot-9" class="square" style="background-color: #f80"></div>
+        <div id="spot-10" class="square" style="background-color: #f80"></div>
+        <div id="spot-11" class="square" style="background-color: #f80"></div>
+        <div id="spot-null" class="square" style="background-color: #f80"></div>
+        <div id="spot-12" class="square" style="background-color: #f80"></div>
+        <div id="spot-13" class="square" style="background-color: #f80"></div>
+        <div id="spot-14" class="square" style="background-color: #f80"></div>
+        <div id="spot-15" class="square" style="background-color: #f80"></div>
+      </div>
+      <div class="face" style="grid-area: front">
+        <div id="spot-16" class="square" style="background-color: #0f0"></div>
+        <div id="spot-17" class="square" style="background-color: #0f0"></div>
+        <div id="spot-18" class="square" style="background-color: #0f0"></div>
+        <div id="spot-19" class="square" style="background-color: #0f0"></div>
+        <div id="spot-null" class="square" style="background-color: #0f0"></div>
+        <div id="spot-20" class="square" style="background-color: #0f0"></div>
+        <div id="spot-21" class="square" style="background-color: #0f0"></div>
+        <div id="spot-22" class="square" style="background-color: #0f0"></div>
+        <div id="spot-23" class="square" style="background-color: #0f0"></div>
+      </div>
+      <div class="face" style="grid-area: right">
+        <div id="spot-24" class="square" style="background-color: #f00"></div>
+        <div id="spot-25" class="square" style="background-color: #f00"></div>
+        <div id="spot-26" class="square" style="background-color: #f00"></div>
+        <div id="spot-27" class="square" style="background-color: #f00"></div>
+        <div id="spot-null" class="square" style="background-color: #f00"></div>
+        <div id="spot-28" class="square" style="background-color: #f00"></div>
+        <div id="spot-29" class="square" style="background-color: #f00"></div>
+        <div id="spot-30" class="square" style="background-color: #f00"></div>
+        <div id="spot-31" class="square" style="background-color: #f00"></div>
+      </div>
+      <div class="face" style="grid-area: back">
+        <div id="spot-32" class="square" style="background-color: #00f"></div>
+        <div id="spot-33" class="square" style="background-color: #00f"></div>
+        <div id="spot-34" class="square" style="background-color: #00f"></div>
+        <div id="spot-35" class="square" style="background-color: #00f"></div>
+        <div id="spot-null" class="square" style="background-color: #00f"></div>
+        <div id="spot-36" class="square" style="background-color: #00f"></div>
+        <div id="spot-37" class="square" style="background-color: #00f"></div>
+        <div id="spot-38" class="square" style="background-color: #00f"></div>
+        <div id="spot-39" class="square" style="background-color: #00f"></div>
+      </div>
+      <div class="face" style="grid-area: down">
+        <div id="spot-40" class="square" style="background-color: #ff0"></div>
+        <div id="spot-41" class="square" style="background-color: #ff0"></div>
+        <div id="spot-42" class="square" style="background-color: #ff0"></div>
+        <div id="spot-43" class="square" style="background-color: #ff0"></div>
+        <div id="spot-null" class="square" style="background-color: #ff0"></div>
+        <div id="spot-44" class="square" style="background-color: #ff0"></div>
+        <div id="spot-45" class="square" style="background-color: #ff0"></div>
+        <div id="spot-46" class="square" style="background-color: #ff0"></div>
+        <div id="spot-47" class="square" style="background-color: #ff0"></div>
+      </div>
+    </div>
+    <!-- CUBE RENDER -->
+
+    <button id="render">Render</button>
+    <button id="U" class="rotate">Rotate U</button>
+    <button id="D" class="rotate">Rotate D</button>
+    <button id="L" class="rotate">Rotate L</button>
+    <button id="R" class="rotate">Rotate R</button>
+    <button id="F" class="rotate">Rotate F</button>
+    <button id="B" class="rotate">Rotate B</button>
+
     <script type="module" src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#cube {
+  margin: 16px;
+  max-width: 640px;
+  gap: 10px;
+  display: grid;
+  grid-template-areas:
+    ".    up    .     .   "
+    "left front right back"
+    ".    down  .     .   ";
+}
+
+div.face {
+  width: 24vw;
+  max-width: 150px;
+  height: 24vw;
+  max-height: 150px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.square {
+  width: 8vw;
+  max-width: 50px;
+  height: 8vw;
+  max-height: 50px;
+  border: 1px solid black;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
